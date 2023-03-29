@@ -1,0 +1,94 @@
+body{
+    background-color: #e5e5e5;
+}
+.card_wrapper {
+  margin-top: 50px;
+  /* padding: 15px; */
+  background-color: #ffffff;
+  border-radius: 16px;
+  
+}
+
+h1{
+  font-family: 'DM Serif Display', serif;
+  padding-bottom: 25px;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+.user_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.company_info {
+  margin-top: 50px;
+}
+.company{
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.profile_img_wrapper {
+  background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);
+  overflow: hidden;
+}
+.card_wrapper .row {
+ border-radius: 16px;
+ overflow: hidden;
+}
+
+.card_wrapper .row:hover {
+ cursor: pointer;
+}
+.card_profile_details {
+  margin: 25px;
+}
+.card_profile_details img{
+  width: 23px;
+  margin-right: 10px;
+}
+.card_profile_logo img{
+  width: 60px
+}
+.card_profile_info{
+  display: flex;
+  justify-content: flex-start;
+  color: #374A59;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
