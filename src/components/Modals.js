@@ -3,7 +3,18 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 
-function Modals({show, handleCloses, name, email, address, phone, website, company, info}) {
+function Modals({
+  show,
+  handleCloses,
+  handleSave,
+  name,
+  email,
+  address,
+  phone,
+  website,
+  company,
+  info,
+}) {
   return (
     <>
       <Modal show={show} onHide={handleCloses}>
@@ -13,7 +24,7 @@ function Modals({show, handleCloses, name, email, address, phone, website, compa
         <Modal.Body>
           <Form.Group className="mb-3">
             <Form.Label>Full Name</Form.Label>
-            <Form.Control placeholder={'Name'} id="fullname" defaultValue={name} />
+            <Form.Control placeholder={'Name'} id="fullname" defaultValue={name} onChange={name} />
           </Form.Group>
 
           <Form.Group className="mb-3">
@@ -50,7 +61,7 @@ function Modals({show, handleCloses, name, email, address, phone, website, compa
           <Button variant="secondary" onClick={handleCloses}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleCloses}>
+          <Button variant="primary" onClick={handleSave}>
             Save Changes
           </Button>
         </Modal.Footer>

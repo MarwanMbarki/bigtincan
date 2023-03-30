@@ -9,6 +9,18 @@ body{
   
 }
 
+.add_btn{
+  margin-top: 50px;
+  justify-content: flex-end;
+  display: flex;
+}
+.add_btn .btn-primary{
+  height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
 h1{
   font-family: 'DM Serif Display', serif;
   padding-bottom: 25px;
